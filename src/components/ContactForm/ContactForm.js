@@ -21,7 +21,7 @@ export const ContactForm = ({onSubmit}) => {
   }
 
   const handleSubmit = event => {
-    event.preventDefult();
+    event.preventDefault();
     onSubmit({name, number});
     console.log('new data');
     setName('');
